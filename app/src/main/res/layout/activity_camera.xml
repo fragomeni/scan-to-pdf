@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="br.com.fragomeni.scan_to_pdf.CameraActivity">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_preview" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_photo_camera_black_24dp"
+                android:id="@+id/camera_shoot_button"
+                android:layout_weight="1"
+                android:background="#22CCCCCC"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:tint="@android:color/white"
+                android:onClick="shoot" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_done_white_24dp"
+                android:id="@+id/camera_done_button"
+                android:layout_weight="1"
+                android:background="#22CCCCCC"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:onClick="done" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
