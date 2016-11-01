@@ -23,8 +23,7 @@ import br.com.fragomeni.scan_to_pdf.model.AppFile;
 import br.com.fragomeni.scan_to_pdf.model.AppPage;
 
 /**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
+ * Activity para tirar foto das páginas
  */
 public class CameraActivity extends AppCompatActivity implements SurfaceHolder.Callback, Camera.PictureCallback {
 
