@@ -128,7 +128,7 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
         return result;
     }
 
-    void shoot(final View v) {
+    public void shoot(final View v) {
 
         if(camera == null) {
             return;
@@ -177,7 +177,7 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
         }
     }
 
-    void done(View v) {
+   public void done(View v) {
         Intent intent = new Intent(this, FileEditActivity.class);
         app.setCurrentFile(appFile);
         startActivity(intent);
